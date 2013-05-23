@@ -22,7 +22,7 @@ public class OAuth2Demo {
 
     public static void main(String[] args) throws TBlogException, IOException, JSONException {
         TBlog tblog = new TBlog(OAuthVersion.V2);
-        tblog.setOAuth2AccessToken("9d246c5f25c135a6015abcee894e23");
+        tblog.setOAuth2AccessToken("c45495c5d344d23ab9723f9bf32a37e");
         showUser(tblog);
     }
 
