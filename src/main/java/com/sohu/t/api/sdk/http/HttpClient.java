@@ -440,7 +440,12 @@ public class HttpClient implements java.io.Serializable {
         } else {
             parts = new Part[params.length + 1];
         }
-
+        if (params != null) {
+            int i = 0;
+            for (PostParameter entry : params) {
+                parts[i++] = new StringPart(entry.getName(), (String) entry.getValue());
+            }
+        }
         FilePart filePart;
         try {
 
